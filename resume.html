@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lahari Kankipati — Resume</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;font-size:10.5px;line-height:1.42;color:#000;background:#e8e8e8;padding:24px 16px}
+
+/* Download bar */
+.dl-bar{max-width:820px;margin:0 auto 14px;display:flex;justify-content:flex-end;gap:10px}
+.dl-btn{background:#0f766e;color:#fff;border:none;padding:9px 22px;border-radius:7px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;letter-spacing:.02em}
+.dl-btn:hover{background:#134e4a}
+
+/* Page */
+.page{background:#fff;max-width:820px;margin:0 auto;padding:34px 44px 30px;box-shadow:0 4px 24px rgba(0,0,0,.14)}
+
+/* Header */
+h1{font-size:21px;font-weight:700;text-align:center;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:5px}
+.contact{text-align:center;font-size:9.5px;color:#222;margin-bottom:10px}
+.contact a{color:#000;text-decoration:none}
+.contact a:hover{text-decoration:underline}
+
+/* Section */
+.sec{margin-bottom:7px}
+.sec-head{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;border-bottom:1.5px solid #000;padding-bottom:2px;margin-bottom:5px;margin-top:8px}
+
+/* Summary */
+.summary{font-size:10px;line-height:1.5}
+
+/* Edu row */
+.row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1px}
+.row-title{font-weight:700;font-size:10.5px}
+.row-date{font-size:9.5px;color:#333;white-space:nowrap;padding-left:8px}
+.row-sub{font-size:9.5px;color:#444;font-style:italic;margin-bottom:4px}
+
+/* Bullets */
+ul{margin-left:15px;margin-top:2px;margin-bottom:3px}
+li{margin-bottom:2px;font-size:9.8px;line-height:1.44}
+
+/* Project */
+.proj-head{margin-top:6px;margin-bottom:2px}
+.proj-name{font-weight:700;font-size:10.5px}
+.proj-stack{font-size:9px;color:#444}
+
+/* Skills */
+.skill-row{font-size:9.8px;margin-bottom:2px;line-height:1.45}
+.skill-row b{font-weight:700}
+
+/* Certs */
+.cert-line{font-size:9.5px;line-height:1.6}
+.cert-line b{font-weight:700}
+
+/* Print */
+@media print{
+  body{background:#fff;padding:0}
+  .dl-bar{display:none}
+  .page{box-shadow:none;padding:22px 36px 18px;max-width:100%}
+  h1{font-size:19px}
+  @page{size:letter;margin:0}
+}
+</style>
+</head>
+<body>
+
+<div class="dl-bar">
+  <button class="dl-btn" onclick="window.print()">&#8595; Download PDF</button>
+</div>
+
+<div class="page">
+
+  <h1>Lahari Kankipati</h1>
+  <div class="contact">
+    (513) 348-7836 &nbsp;&bull;&nbsp;
+    <a href="mailto:kankipatilahari@gmail.com">kankipatilahari@gmail.com</a> &nbsp;&bull;&nbsp;
+    <a href="https://linkedin.com/in/laharikankipati">linkedin.com/in/laharikankipati</a> &nbsp;&bull;&nbsp;
+    <a href="https://github.com/LahariKankipati">github.com/LahariKankipati</a>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="sec">
+    <div class="sec-head">Professional Summary</div>
+    <p class="summary">AI/ML Engineer with 2.5 years of industry experience at Ericsson R&amp;D and a 4.0 GPA M.Eng. in Artificial Intelligence (University of Cincinnati, 2026). Specializes in production MLOps systems, RAG pipelines with rigorous ablation-driven evaluation, real-time feature stores with drift detection, and multi-agent LLM orchestration over live external APIs. Proven track record of shipping systems with measurable benchmarks and full observability; recognized org-wide with the Gen AI Specialist for Test Automation Award (Ericsson, 2025) and published in an international peer-reviewed journal.</p>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="sec">
+    <div class="sec-head">Education</div>
+    <div class="row">
+      <span class="row-title">University of Cincinnati &mdash; M.Eng. in Artificial Intelligence &nbsp; GPA: 4.0/4.0</span>
+      <span class="row-date">Aug 2025 &ndash; Aug 2026</span>
+    </div>
+    <div class="row-sub">Coursework: Machine Learning, Deep Learning, Generative AI, Neural Networks, Reinforcement Learning, MLOps, Cloud Computing</div>
+    <div class="row">
+      <span class="row-title">Vellore Institute of Technology &mdash; B.Tech. in Computer Science &amp; Engineering &nbsp; GPA: 8.98/10</span>
+      <span class="row-date">Jul 2019 &ndash; May 2023</span>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="sec">
+    <div class="sec-head">Experience</div>
+    <div class="row">
+      <span class="row-title">Ericsson &mdash; Research &amp; Development Unit &nbsp;|&nbsp; Associate Software Engineer</span>
+      <span class="row-date">Jan 2023 &ndash; Aug 2025</span>
+    </div>
+    <div class="row-sub">Chennai, India &nbsp;&middot;&nbsp; Intern Jan&ndash;Jun 2023 &rarr; Full-Time Jul 2023</div>
+    <ul>
+      <li>Researched, benchmarked, and evaluated Gen AI LLM tools for test automation across the R&amp;D unit; authored org-wide governance standards for responsible LLM adoption in CI/CD workflows; earned the <b>Gen AI Specialist for Test Automation Award (2025)</b> &mdash; recognized globally across Ericsson engineering</li>
+      <li>Designed and executed controlled A/B experiments comparing AI automation strategies against baselines: achieved <b>90% improvement in automation efficiency</b>, 50% increase in test coverage, and 30% reduction in new-hire onboarding time; findings informed org-wide tooling decisions</li>
+      <li>Architected end-to-end migration of legacy JUnit and Protractor test suites to Robot Framework integrated with Jenkins CI/CD; contributed to <b>6 consecutive production releases with zero critical defects</b> and drove FST failure rate to ~0%</li>
+      <li>Built and maintained production Angular/TypeScript frontend systems; engineered a centralized UI component library adopted across 4+ product teams, eliminating duplicated development effort and standardizing design patterns org-wide</li>
+    </ul>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="sec">
+    <div class="sec-head">Projects</div>
+
+    <div class="proj-head">
+      <span class="proj-name">AI SaaS Onboarding Copilot</span>
+      <span class="proj-stack"> &nbsp;|&nbsp; Python &middot; FastAPI &middot; LangChain &middot; Qdrant &middot; Redis &middot; BM25/RRF &middot; Groq LLaMA-3 &middot; Docker</span>
+    </div>
+    <ul>
+      <li>Engineered hybrid dense (Qdrant cosine) + BM25 keyword retrieval fused via Reciprocal Rank Fusion over 5,510 hierarchically chunked docs (3-level: section summaries, paragraph chunks with 40-word overlap, intact code blocks); achieved <b>97.8% Recall@3</b>, 86.4% faithfulness, and <b>100% abstain accuracy</b> on 50-question handwritten eval suite across 7 categories</li>
+      <li>Conducted ablation study revealing CrossEncoder reranker (MS MARCO) degraded domain-specific Recall@3 by 20%; dense-only retrieval outperformed hybrid+reranker &mdash; demonstrating retrieval components must be empirically validated per domain, not assumed from benchmarks</li>
+      <li>Built Redis-backed proactive trigger engine monitoring 4 user lifecycle stages (new, exploring, stuck, activated) with 10 cooldown-aware behavioral rules; persona-adaptive generation tuned response depth per stage; packaged as a zero-dependency single-script-tag widget with SSE streaming and 27 unit tests passing in 0.22s</li>
+    </ul>
+
+    <div class="proj-head">
+      <span class="proj-name">Production MLOps Feature Store &mdash; Real-Time Serving &amp; Drift Detection</span>
+      <span class="proj-stack"> &nbsp;|&nbsp; Python &middot; Redis &middot; PostgreSQL &middot; FastAPI &middot; XGBoost &middot; Grafana &middot; Prometheus &middot; Docker</span>
+    </div>
+    <ul>
+      <li>Built production ML feature store (Redis online + PostgreSQL offline) for real-time credit card fraud detection; engineered 34 features including rolling aggregates (1h/24h/7d windows), velocity metrics, cyclical sin/cos time encoding, and merchant-risk signals; achieved <b>P99 feature-serving latency of 0.37ms</b> and end-to-end prediction P99 of 5.6ms across 10,000 requests</li>
+      <li>Designed point-in-time correct offline store via valid_from timestamp queries to eliminate training-serving skew; implemented PSI (categorical) + symmetric KL divergence (numerical) drift detector with extended histogram binning; detected gradual distribution shifts <b>19&times; faster than mean&plusmn;2&sigma; naive monitoring</b> with 2.35% false positive rate across 1,700 checks; full observability via 14-panel Grafana dashboard</li>
+    </ul>
+
+    <div class="proj-head">
+      <span class="proj-name">Multi-Agent LLM Decision Engine &mdash; Crop Portfolio Optimizer</span>
+      <span class="proj-stack"> &nbsp;|&nbsp; Python &middot; LangGraph &middot; OpenAI &middot; USDA NASS &middot; NOAA &middot; FRED &middot; Pandas</span>
+    </div>
+    <ul>
+      <li>Built a LangGraph two-agent system: Agent 1 deterministically plans source-specific API retrieval parameters (USDA NASS crop statistics, NOAA weather, FRED macro series); Agent 2 engineers features, normalizes cross-unit data (bu/acre vs cwt/acre), performs QC validation, and emits LLM-enriched forecasts; full agentic workflow: validate &rarr; plan &rarr; fetch &rarr; forecast &rarr; recommend</li>
+      <li>Implemented risk-aware portfolio optimization across 3 decision profiles (maximize profit, balanced, minimize risk); <b>Top 5 Finalist, Kautz-Uible Economics Hackathon ($1,000 prize)</b>; deployed at 1819 Innovation Hub, University of Cincinnati</li>
+    </ul>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="sec">
+    <div class="sec-head">Technical Skills</div>
+    <div class="skill-row"><b>Languages:</b> Python, SQL, JavaScript, TypeScript, Java, R, C++</div>
+    <div class="skill-row"><b>ML / AI:</b> LLMs, RAG, LLM Fine-Tuning (QLoRA/PEFT/LoRA), Agentic Workflows, Transformer Models, NLP, Generative AI, Multimodal (CLIP), XGBoost, Feature Engineering, Drift Detection, Anomaly Detection, A/B Testing</div>
+    <div class="skill-row"><b>Frameworks:</b> PyTorch, TensorFlow/Keras, scikit-learn, Hugging Face Transformers, LangChain, LangGraph, FastAPI, Streamlit, Angular</div>
+    <div class="skill-row"><b>MLOps &amp; Infra:</b> Feature Stores, Model Serving, Vector Databases (Qdrant), Redis, PostgreSQL, Docker, Kubernetes, Jenkins CI/CD, AWS, GCP, Azure, Grafana, Prometheus</div>
+    <div class="skill-row"><b>Data Engineering:</b> Apache Spark, Hadoop, ETL Pipelines, Point-in-Time Correct Training, Statistical Analysis</div>
+  </div>
+
+  <!-- CERTS -->
+  <div class="sec">
+    <div class="sec-head">Certifications, Awards &amp; Publication</div>
+    <div class="cert-line">
+      <b>Machine Learning</b> (Stanford/Coursera, 2025) &nbsp;|&nbsp;
+      <b>DevOps on AWS</b> (AWS, 2025) &nbsp;|&nbsp;
+      <b>Generative AI Prompt Engineering</b> (IBM, 2025) &nbsp;|&nbsp;
+      <b>RAG Crash Course</b> (KodeKloud, 2026) &nbsp;|&nbsp;
+      <b>Gen AI Specialist for Test Automation Award</b> (Ericsson, 2025) &nbsp;|&nbsp;
+      PNC Hackathon &mdash; AI Financial Assistant (2025)
+    </div>
+    <div class="cert-line" style="margin-top:3px">
+      <b>Publication:</b> Experimental Analysis of Heart Disease Prediction Using ML with Hyperparameter Tuning and Recursive Feature Elimination &mdash; <em>International Journal of Intelligent Engineering and Systems (IJIES)</em>, Oct 2023
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

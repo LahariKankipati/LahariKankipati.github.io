@@ -1,0 +1,5 @@
+# Only track portfolio files
+*
+!.gitignore
+!index.html
+!resume.html
