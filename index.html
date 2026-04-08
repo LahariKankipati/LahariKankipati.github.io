@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lahari Kankipati — AI/ML Engineer. M.Eng. AI @ UC (GPA 4.0). 2.5 years at Ericsson R&D. Production ML systems, RAG, LLM fine-tuning, MLOps.">
+<meta name="keywords" content="Lahari Kankipati, AI ML Engineer, Machine Learning, RAG, LangChain, MLOps, Feature Store, Python, LLM, XGBoost, PyTorch, Qdrant, Redis, FastAPI, Docker">
+<title>Lahari Kankipati | AI/ML Engineer</title>
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lahari Kankipati | AI/ML Engineer">
+<meta property="og:description" content="AI/ML Engineer · 2.5 years at Ericsson R&D · 4.0 GPA M.Eng. AI @ UC · Production MLOps, RAG pipelines with ablation-driven eval, LLM fine-tuning · Gen AI Specialist Award 2025.">
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Lahari Kankipati | AI/ML Engineer">
+<meta name="twitter:description" content="AI/ML Engineer · 2.5 years at Ericsson R&D · 4.0 GPA M.Eng. AI @ UC · Production MLOps, RAG pipelines with ablation-driven eval, LLM fine-tuning · Gen AI Specialist Award 2025.">
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='14' fill='%230f766e'/><text y='71' x='50' text-anchor='middle' font-size='48' font-family='Georgia,serif' font-weight='700' fill='white'>LK</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400;1,9..144,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --ink:#1c1917;--ink2:#44403c;--ink3:#78716c;--ink4:#a8a29e;
+  --bg:#fafaf7;--sur:#fff;--sur2:#f5f3ef;--sur3:#ede9e4;
+  --bdr:#e7e2db;--bdr2:#d4cec5;
+  --teal:#0f766e;--tl:#ccfbf1;--td:#134e4a;
+  --amb:#92400e;--al:#fef3c7;--ad:#78350f;
+  --for:#166534;--fl:#dcfce7;--fd:#14532d;
+  --ros:#9f1239;--rl:#ffe4e6;--rd:#881337;
+  --slt:#1e3a5f;--sl:#dbeafe;
+  --sh:0 1px 3px rgba(0,0,0,.07);
+  --sh2:0 4px 16px rgba(0,0,0,.09);
+}
+body{background:var(--bg);color:var(--ink);font-family:'Bricolage Grotesque',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+/* NAV */
+.nav{position:sticky;top:0;z-index:200;background:rgba(250,250,247,.93);backdrop-filter:blur(16px);border-bottom:1px solid var(--bdr);height:58px;display:flex;align-items:center;padding:0 32px;gap:16px}
+.nbrand{font-family:'Fraunces',serif;font-weight:700;font-size:17px;color:var(--ink);text-decoration:none;flex-shrink:0;letter-spacing:-.02em}
+.nlinks{display:flex;gap:2px;flex:1;overflow-x:auto;scrollbar-width:none}
+.nlinks::-webkit-scrollbar{display:none}
+.nlink{font-size:13px;font-weight:500;padding:6px 14px;border-radius:7px;color:var(--ink3);text-decoration:none;transition:all .2s;white-space:nowrap;flex-shrink:0}
+.nlink:hover{background:var(--sur2);color:var(--ink)}
+.nhire{margin-left:auto;font-size:13px;font-weight:600;padding:7px 18px;background:var(--teal);color:#fff;border-radius:7px;text-decoration:none;flex-shrink:0;transition:all .2s}
+.nhire:hover{background:var(--td)}
+@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+/* LAYOUT */
+.w{max-width:1060px;margin:0 auto;padding:0 36px}
+.sec{padding:60px 0;border-top:1px solid var(--bdr)}
+.sec:first-child{border-top:none}
+/* HERO */
+.hero{padding:72px 0 60px}
+.hpill{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;padding:4px 13px;border-radius:100px;background:var(--fl);color:var(--for);border:1px solid #bbf7d0;margin-bottom:24px;letter-spacing:.02em}
+.hpill::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--for);animation:bp 1.8s ease infinite}
+@keyframes bp{0%,100%{box-shadow:0 0 0 0 rgba(22,101,52,.5)}50%{box-shadow:0 0 0 6px rgba(22,101,52,0)}}
+.hname{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(40px,6.5vw,70px);letter-spacing:-.04em;line-height:.92;color:var(--ink);margin-bottom:10px}
+.hname em{font-style:italic;color:var(--teal)}
+.hrole{font-size:17px;color:var(--ink3);margin-bottom:18px}
+.hdesc{font-size:15.5px;color:var(--ink3);max-width:580px;line-height:1.8;margin-bottom:32px}
+.hdesc strong{color:var(--ink);font-weight:600}
+.kpis{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--bdr);border-radius:14px;overflow:hidden;margin-bottom:32px}
+.kpi{padding:16px 14px;background:var(--sur);text-align:center;border-right:1px solid var(--bdr)}
+.kpi:last-child{border-right:none}
+.kv{font-family:'Fraunces',serif;font-weight:700;font-size:24px;letter-spacing:-.04em;line-height:1;color:var(--ink)}
+.kv.t{color:var(--teal)}.kv.f{color:var(--for)}.kv.a{color:var(--amb)}
+.kl{font-size:10.5px;font-weight:500;color:var(--ink4);letter-spacing:.05em;text-transform:uppercase;margin-top:4px}
+.hacts{display:flex;gap:9px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;font-weight:600;padding:10px 20px;border-radius:7px;text-decoration:none;border:1px solid var(--bdr2);color:var(--ink2);background:var(--sur);transition:all .2s;cursor:pointer;font-family:inherit}
+.btn:hover{border-color:var(--ink3);transform:translateY(-1px);box-shadow:var(--sh2)}
+.btn.pr{background:var(--teal);color:#fff;border-color:var(--teal)}.btn.pr:hover{background:var(--td)}
+.btn.am{background:var(--al);color:var(--ad);border-color:#fde68a}.btn.am:hover{background:#fde68a}
+/* SECTION HEADS */
+.sh{margin-bottom:36px}
+.stag{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:500;color:var(--teal);letter-spacing:.12em;text-transform:uppercase;margin-bottom:7px}
+.stit{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(24px,3.5vw,36px);letter-spacing:-.03em;color:var(--ink);line-height:1.1}
+.stit em{font-style:italic;color:var(--teal)}
+.ssub{font-size:15px;color:var(--ink3);margin-top:9px;max-width:560px;line-height:1.75}
+/* SKILLS */
+.sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.sg{background:var(--sur);border:1px solid var(--bdr);border-radius:11px;padding:18px;transition:all .2s}
+.sg:hover{border-color:var(--bdr2);box-shadow:var(--sh)}
+.sgh{display:flex;align-items:center;gap:9px;margin-bottom:13px}
+.sgi{width:30px;height:30px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
+.sgn{font-weight:700;font-size:13.5px;color:var(--ink)}
+.sgs{font-size:11.5px;color:var(--ink4);margin-top:1px}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{font-family:'JetBrains Mono',monospace;font-size:11px;padding:3px 9px;border-radius:4px;background:var(--sur2);border:1px solid var(--bdr);color:var(--ink3);cursor:default;transition:all .15s}
+.chip:hover{border-color:var(--teal);color:var(--teal);background:var(--tl)}
+.chip.c{background:var(--tl);border-color:#99f6e4;color:var(--td);font-weight:500}
+/* PROJECTS */
+.pc{background:var(--sur);border:1px solid var(--bdr);border-radius:13px;overflow:hidden;transition:all .2s;margin-bottom:16px}
+.pc:hover{box-shadow:var(--sh2);border-color:var(--bdr2)}
+.pch{padding:22px 24px 18px;cursor:pointer;display:flex;gap:14px;align-items:flex-start;user-select:none}
+.pci{flex:1}
+.pcm{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:7px}
+.pcn{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--ink4);letter-spacing:.08em}
+.bdg{font-size:11px;font-weight:600;padding:2px 9px;border-radius:100px}
+.bt{background:var(--tl);color:var(--td)}.bf{background:var(--fl);color:var(--fd)}.ba{background:var(--al);color:var(--ad)}.br{background:var(--rl);color:var(--rd)}.bs{background:var(--sl);color:var(--slt)}
+.pctit{font-family:'Fraunces',serif;font-weight:700;font-size:18px;color:var(--ink);letter-spacing:-.02em;margin-bottom:7px;line-height:1.25}
+.pcp{font-size:13.5px;color:var(--ink3);line-height:1.6;font-style:italic}
+.pcchev{font-size:17px;color:var(--ink4);flex-shrink:0;padding-top:3px;transition:transform .25s}
+.pc.op .pcchev{transform:rotate(180deg)}
+.pcb{display:none;padding:0 24px 22px;border-top:1px solid var(--bdr)}
+.pc.op .pcb{display:block;animation:fi .25s ease}
+.bl{margin-top:16px}
+.bltag{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:500;color:var(--ink4);letter-spacing:.1em;text-transform:uppercase;margin-bottom:9px;padding-bottom:5px;border-bottom:1px solid var(--bdr)}
+.mr{display:flex;gap:9px;flex-wrap:wrap;margin-top:10px}
+.mb{flex:1;min-width:100px;background:var(--sur2);border:1px solid var(--bdr);border-radius:7px;padding:12px;text-align:center}
+.mv{font-family:'Fraunces',serif;font-weight:700;font-size:20px;letter-spacing:-.03em;line-height:1}
+.mv.t{color:var(--teal)}.mv.f{color:var(--for)}.mv.a{color:var(--amb)}.mv.r{color:var(--ros)}
+.ml{font-size:10.5px;font-weight:500;color:var(--ink4);margin-top:3px}
+.bd{font-size:14px;color:var(--ink3);line-height:1.8;margin-top:7px}
+.bd strong{color:var(--ink);font-weight:600}
+.fils{display:flex;flex-direction:column;gap:6px;margin-top:7px}
+.fi{display:flex;align-items:flex-start;gap:9px;font-size:13.5px;color:var(--ink3);line-height:1.7}
+.fd{width:17px;height:17px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;flex-shrink:0;margin-top:2px}
+.ft{background:var(--tl);color:var(--teal)}.ff{background:var(--fl);color:var(--for)}.fa{background:var(--al);color:var(--amb)}
+.fi strong{color:var(--ink);font-weight:600}
+.ag2{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:7px}
+.ai{background:var(--sur2);border:1px solid var(--bdr);border-radius:7px;padding:11px 13px}
+.ain{font-size:12.5px;font-weight:600;color:var(--ink);margin-bottom:2px}
+.aid{font-size:12px;color:var(--ink3);line-height:1.5}
+.stags{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+.stag2{font-family:'JetBrains Mono',monospace;font-size:11px;padding:3px 9px;background:var(--sur2);border:1px solid var(--bdr);color:var(--ink3);border-radius:4px}
+/* MINI */
+.mg{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.mini{background:var(--sur);border:1px solid var(--bdr);border-radius:11px;padding:19px;transition:all .2s;position:relative;overflow:hidden}
+.mini::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--teal),var(--for));transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.mini:hover{border-color:var(--bdr2);box-shadow:var(--sh);transform:translateY(-2px)}.mini:hover::after{transform:scaleX(1)}
+.mn{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--ink4);margin-bottom:5px}
+.mt{font-family:'Fraunces',serif;font-weight:700;font-size:14.5px;color:var(--ink);margin-bottom:7px;line-height:1.3}
+.md{font-size:13px;color:var(--ink3);line-height:1.7;margin-bottom:11px}
+.pub{display:inline-flex;align-items:center;gap:4px;font-size:10.5px;font-weight:600;padding:3px 8px;border-radius:100px;background:var(--al);color:var(--ad);border:1px solid #fde68a;margin-bottom:9px}
+/* EXPERIENCE */
+.ec{background:var(--sur);border:1px solid var(--bdr);border-radius:13px;padding:26px;position:relative;overflow:hidden}
+.ec::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:linear-gradient(180deg,var(--teal),var(--for))}
+.ech{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:18px}
+.er{font-family:'Fraunces',serif;font-weight:700;font-size:19px;letter-spacing:-.02em;margin-bottom:3px}
+.eco{font-size:13.5px;font-weight:600;color:var(--teal)}
+.edt{font-size:12.5px;color:var(--ink4);text-align:right}
+.eaw{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:600;padding:4px 11px;border-radius:6px;background:var(--al);color:var(--ad);border:1px solid #fde68a;margin-top:6px}
+.ebs{display:flex;flex-direction:column;gap:12px}
+.eb{display:block;font-size:14.5px;color:var(--ink3);line-height:1.8;padding-left:18px;position:relative;margin-bottom:0}.eb::before{content:"\2022";position:absolute;left:0;top:0;color:var(--teal);font-size:16px;line-height:1.75}
+.eb::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--teal);flex-shrink:0;margin-top:8px}
+.eb strong{color:var(--ink);font-weight:600}
+.imp{color:var(--teal);font-weight:700}
+/* EDU */
+.eg{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.edu{background:var(--sur);border:1px solid var(--bdr);border-radius:11px;padding:22px;transition:all .2s;position:relative}
+.edu.ft2{border-color:#99f6e4;background:linear-gradient(135deg,var(--tl),#fff 60%)}
+.edu:hover{box-shadow:var(--sh);transform:translateY(-2px)}
+.edd{font-family:'Fraunces',serif;font-weight:700;font-size:15px;margin-bottom:3px;line-height:1.3}
+.eds{font-size:12.5px;font-weight:600;color:var(--teal);margin-bottom:3px}
+.eddt{font-size:11.5px;color:var(--ink4);margin-bottom:14px}
+.gpa{display:flex;align-items:baseline;gap:4px}
+.gpan{font-family:'Fraunces',serif;font-weight:700;font-size:44px;letter-spacing:-.04em;line-height:1;color:var(--teal)}
+.gpal{font-size:12px;color:var(--ink4)}
+.edf{font-size:12.5px;color:var(--ink3);margin-top:9px;line-height:1.6}
+/* CERTS */
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.cc{background:var(--sur);border:1px solid var(--bdr);border-radius:8px;padding:13px 15px;display:flex;align-items:flex-start;gap:11px;transition:all .15s}
+.cc:hover{border-color:var(--bdr2);background:var(--sur2)}
+.ci2{font-size:17px;flex-shrink:0;margin-top:1px}
+.cn{font-size:13px;font-weight:600;color:var(--ink);margin-bottom:2px;line-height:1.3}
+.co{font-size:11.5px;color:var(--ink4)}
+/* CONTACT */
+.ctb{background:var(--ink);border-radius:18px;padding:48px;display:grid;grid-template-columns:1fr auto;gap:36px;align-items:center}
+.cth{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(24px,3.5vw,36px);letter-spacing:-.03em;color:#fff;margin-bottom:9px}
+.cth em{font-style:italic;color:#6ee7b7}
+.cts{font-size:14.5px;color:rgba(255,255,255,.5);line-height:1.7}
+.ctls{display:flex;flex-direction:column;gap:9px}
+.cl{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:500;padding:10px 18px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.82);border-radius:7px;text-decoration:none;transition:all .2s;white-space:nowrap}
+.cl:hover{background:rgba(255,255,255,.15);color:#fff}
+.cl.hi{background:var(--teal);border-color:var(--teal);color:#fff}.cl.hi:hover{background:var(--td)}
+/* REVEAL */
+.rv{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}
+.rv.in{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.07s}.d2{transition-delay:.14s}.d3{transition-delay:.21s}
+/* FOOTER */
+footer{text-align:center;padding:28px 16px;font-size:12.5px;color:var(--ink4);border-top:1px solid var(--bdr)}
+.flinks{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:10px}
+.flink{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:500;padding:5px 13px;border-radius:6px;border:1px solid var(--bdr);color:var(--ink3);text-decoration:none;transition:all .15s}
+.flink:hover{border-color:var(--bdr2);color:var(--ink);background:var(--sur2)}
+/* ATS */
+.ats{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;font-size:0;opacity:0}
+/* RESPONSIVE */
+@media(max-width:800px){
+  .nav{padding:0 14px;gap:8px}.nlink{font-size:12px;padding:5px 10px}
+  .w{padding:0 16px}
+  .kpis{grid-template-columns:repeat(3,1fr)}
+  .kpi:nth-child(4),.kpi:nth-child(5){display:none}
+  .sgrid,.mg,.eg,.cg,.ag2{grid-template-columns:1fr}
+  .ctb{grid-template-columns:1fr}
+  .ctls{display:none}
+}
+</style>
+</head>
+<body id="top">
+<div class="ats">Lahari Kankipati AI ML Engineer Machine Learning Python RAG LangChain LangGraph MLOps Production Feature Store Real-Time Serving Redis PostgreSQL XGBoost PyTorch scikit-learn FastAPI Docker Kubernetes Jenkins AWS Azure Qdrant QLoRA PEFT Grafana Prometheus Evidently AI Drift Detection Multi-agent Systems University of Cincinnati GPA 4.0 Ericsson R&D kankipatilahari@gmail.com 513-348-7836 linkedin.com/in/laharikankipati github.com/LahariKankipati Published IJIES 2023 Heart Disease Prediction Gen AI Specialist Award 2025 Kautz-Uible Economics Hackathon Top 5 Finalist Prize $1000 Robot Framework JUnit UI Component Library Frontend Development Backend Development Pipeline Ownership VM CN LSV Testing Release Testing Tableau Power BI PostgreSQL MySQL Redis Qdrant OpenSearch FAISS SQLite Seaborn Plotly R TypeScript Profit Optimization Multi-agent LangGraph Cincinnati Ohio</div>
+
+<nav class="nav">
+  <a href="#top" class="nbrand">LK</a>
+  <div class="nlinks">
+    <a href="#experience" class="nlink">Experience</a>
+    <a href="#projects" class="nlink">Projects</a>
+    <a href="#education" class="nlink">Education</a>
+    <a href="#contact" class="nlink">Contact</a>
+  </div>
+  <a href="mailto:kankipatilahari@gmail.com" class="nhire">Hire Me</a>
+</nav>
+
+<!-- ████ HOME ████ -->
+<div id="p-home">
+<div class="hero"><div class="w">
+  <div class="hpill">Available for AI/ML roles</div>
+  <h1 class="hname">Lahari<br><em>Kankipati</em></h1>
+  <p class="hrole">AI/ML Engineer &middot; M.Eng. Artificial Intelligence, University of Cincinnati</p>
+  <p class="hdesc">I build <strong>production ML systems</strong> &mdash; not prototypes. Sub-10ms feature stores, RAG pipelines with original ablation findings, LLM fine-tuning at 100&times; lower cost. 2.5 years shipping AI at <strong>Ericsson R&amp;D</strong> &middot; Won company-wide Gen AI Specialist Award 2025 and Top 5 at Kautz-Uible Economics Hackathon.</p>
+  <div class="kpis">
+    <div class="kpi"><div class="kv t">4.0</div><div class="kl">GPA&middot;M.Eng.</div></div>
+    <div class="kpi"><div class="kv">0.37ms</div><div class="kl">Feature P99</div></div>
+    <div class="kpi"><div class="kv f">97.8%</div><div class="kl">RAG Recall@3</div></div>
+    <div class="kpi"><div class="kv">2.5yr</div><div class="kl">Ericsson R&amp;D</div></div>
+    <div class="kpi"><div class="kv a">7</div><div class="kl">Projects</div></div>
+  </div>
+  <div class="hacts">
+    <a href="resume.html" target="_blank" rel="noopener noreferrer" class="btn pr">&#8595; Download Resume</a>
+    <a href="mailto:kankipatilahari@gmail.com" class="btn">Email Me</a>
+  </div>
+</div></div>
+
+<div class="sec"><div class="w">
+  <div class="sh rv"><div class="stag">Skills</div><h2 class="stit">Full-stack <em>AI engineering</em> stack.</h2><p class="ssub">Blue-highlighted = used in production with measurable outcomes.</p></div>
+  <div class="sgrid">
+    <div class="sg rv"><div class="sgh"><div class="sgi" style="background:#ccfbf1">&#x1F916;</div><div><div class="sgn">Machine Learning</div><div class="sgs">Classical ML, training &amp; eval</div></div></div><div class="chips"><span class="chip c">scikit-learn</span><span class="chip c">XGBoost</span><span class="chip c">PyTorch</span><span class="chip">TensorFlow/Keras</span><span class="chip c">CLIP</span><span class="chip">GridSearchCV</span><span class="chip">SMOTE</span><span class="chip">RFE</span></div></div>
+    <div class="sg rv d1"><div class="sgh"><div class="sgi" style="background:#e9d5ff">&#x26A1;</div><div><div class="sgn">Generative AI &amp; LLMs</div><div class="sgs">RAG, fine-tuning, agents</div></div></div><div class="chips"><span class="chip c">LangChain</span><span class="chip c">LangGraph</span><span class="chip c">RAG pipelines</span><span class="chip c">QLoRA/PEFT</span><span class="chip c">LLM fine-tuning</span><span class="chip">Multi-agent</span><span class="chip">Prompt engineering</span><span class="chip">Groq/OpenAI API</span></div></div>
+    <div class="sg rv d2"><div class="sgh"><div class="sgi" style="background:#d1fae5">&#x1F5C4;&#xFE0F;</div><div><div class="sgn">Vector Search</div><div class="sgs">Embeddings, hybrid retrieval</div></div></div><div class="chips"><span class="chip c">Qdrant</span><span class="chip c">BM25</span><span class="chip c">RRF</span><span class="chip">OpenSearch</span><span class="chip">all-MiniLM-L6-v2</span><span class="chip">CrossEncoder</span><span class="chip">Chunking</span></div></div>
+    <div class="sg rv"><div class="sgh"><div class="sgi" style="background:#fef3c7">&#x1F3ED;</div><div><div class="sgn">MLOps &amp; Feature Eng.</div><div class="sgs">Production ML infra</div></div></div><div class="chips"><span class="chip c">Redis</span><span class="chip c">PostgreSQL</span><span class="chip c">Evidently AI</span><span class="chip c">Grafana</span><span class="chip">Prometheus</span><span class="chip">PSI drift</span><span class="chip">KL divergence</span><span class="chip">Point-in-time retrieval</span></div></div>
+    <div class="sg rv d1"><div class="sgh"><div class="sgi" style="background:#fee2e2">&#x1F6E0;&#xFE0F;</div><div><div class="sgn">Infrastructure</div><div class="sgs">Deploy, CI/CD, cloud</div></div></div><div class="chips"><span class="chip c">Docker</span><span class="chip c">FastAPI</span><span class="chip">Kubernetes</span><span class="chip">Jenkins CI/CD</span><span class="chip">AWS</span><span class="chip">Azure</span><span class="chip">Git</span><span class="chip">REST APIs</span></div></div>
+    <div class="sg rv d2"><div class="sgh"><div class="sgi" style="background:#ede9fe">&#x1F4BB;</div><div><div class="sgn">Languages &amp; Data</div><div class="sgs">Programming, processing</div></div></div><div class="chips"><span class="chip c">Python</span><span class="chip c">SQL</span><span class="chip">Java</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">R</span><span class="chip">NumPy</span><span class="chip">Pandas</span><span class="chip">Matplotlib</span></div></div>
+    <div class="sg rv"><div class="sgh"><div class="sgi" style="background:#fce7f3">&#x1F4CA;</div><div><div class="sgn">BI &amp; Visualization</div><div class="sgs">Analytics &amp; dashboards</div></div></div><div class="chips"><span class="chip c">Tableau</span><span class="chip c">Power BI</span><span class="chip">Matplotlib</span><span class="chip">Seaborn</span><span class="chip">Plotly</span><span class="chip">Streamlit</span></div></div>
+    <div class="sg rv d1"><div class="sgh"><div class="sgi" style="background:#fef9c3">&#x1F5C3;&#xFE0F;</div><div><div class="sgn">Databases</div><div class="sgs">Relational, vector, in-memory</div></div></div><div class="chips"><span class="chip c">PostgreSQL</span><span class="chip c">Redis</span><span class="chip c">Qdrant</span><span class="chip">MySQL</span><span class="chip">OpenSearch</span><span class="chip">FAISS</span><span class="chip">SQLite</span></div></div>
+  </div>
+</div></div>
+
+<div class="sec" id="experience"><div class="w">
+  <div class="sh rv"><div class="stag">Experience</div><h2 class="stit">2.5 years at Ericsson R&amp;D &mdash;<br><em>full-stack engineering.</em></h2>
+</div>
+  <div class="ec rv">
+    <div class="ech">
+      <div>
+        <div class="er">Associate Software Engineer</div>
+        <div class="eco">Ericsson R&amp;D &middot; Chennai, India</div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px">
+          <div class="eaw">&#x1F3C6; Gen AI Specialist for Test Automation &mdash; 2025</div>
+        </div>
+      </div>
+      <div class="edt">
+        <div>Jan 2023 &mdash; Aug 2025</div>
+        <div style="font-size:11px;color:var(--ink4);margin-top:2px">Intern Jan&ndash;Jun 2023 &middot; Full-time Jul 2023</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;margin-top:4px">
+
+      <div style="border:1px solid var(--bdr);border-radius:10px;overflow:hidden">
+        <div style="background:var(--tl);border-bottom:1px solid #99f6e4;padding:10px 16px;display:flex;align-items:center;gap:10px">
+          <span style="font-size:16px">&#x1F5A5;&#xFE0F;</span>
+          <span style="font-size:11px;font-weight:700;color:var(--td);letter-spacing:.08em;text-transform:uppercase;font-family:'JetBrains Mono',monospace">Frontend Development</span>
+        </div>
+        <div style="padding:14px 18px;display:flex;flex-direction:column;gap:8px">
+          <p class="eb">Designed and built a company-wide UI component library from scratch, delivering standardised reusable widgets including checkboxes, task bars, and progress bars. The library was adopted across all product teams, eliminating duplicated frontend code and significantly reducing developer onboarding time.</p>
+          <p class="eb">Owned end-to-end maintenance of the UI library, triaging and resolving Trouble Reports (TRs) and Bug/Software Update Cases (BSUCs) to prevent regressions and keep all dependent teams unblocked across every release cycle.</p>
+        </div>
+      </div>
+
+      <div style="border:1px solid var(--bdr);border-radius:10px;overflow:hidden">
+        <div style="background:#fef9c3;border-bottom:1px solid #fde68a;padding:10px 16px;display:flex;align-items:center;gap:10px">
+          <span style="font-size:16px">&#x1F3C6;</span>
+          <span style="font-size:11px;font-weight:700;color:var(--ad);letter-spacing:.08em;text-transform:uppercase;font-family:'JetBrains Mono',monospace">Test Automation &amp; Gen AI &mdash; Award Winner</span>
+        </div>
+        <div style="padding:14px 18px;display:flex;flex-direction:column;gap:8px">
+          <p class="eb">Manually converted the team&rsquo;s entire existing JUnit test suite to Robot Framework, rewriting all test cases in the new framework and reducing manual testing effort by 50%, saving over 200 engineer-hours per quarter.</p>
+          <p class="eb">When an internal AI tool was later introduced for test automation, contributed ideas and suggestions on how to leverage it effectively for the team&rsquo;s workflows, helping the organisation get more value from the tool. Recognised with the company-wide Gen AI Specialist for Test Automation Award 2025 for these contributions.</p>
+        </div>
+      </div>
+
+      <div style="border:1px solid var(--bdr);border-radius:10px;overflow:hidden">
+        <div style="background:var(--fl);border-bottom:1px solid #bbf7d0;padding:10px 16px;display:flex;align-items:center;gap:10px">
+          <span style="font-size:16px">&#x1F6E1;&#xFE0F;</span>
+          <span style="font-size:11px;font-weight:700;color:var(--fd);letter-spacing:.08em;text-transform:uppercase;font-family:'JetBrains Mono',monospace">Release &amp; System Testing</span>
+        </div>
+        <div style="padding:14px 18px;display:flex;flex-direction:column;gap:8px">
+          <p class="eb">Managed end-to-end release testing and Live System Verification (LSV) testing across both manual and automated suites, delivering 6 consecutive production releases with zero critical defects and zero leakage from team scope.</p>
+          <p class="eb">Took full ownership of CI/CD pipelines across VM (Virtual Machine) and CN (Cloud Native) environments, proactively resolving all pipeline failures on schedule and driving the First System Test (FST) failure rate down to near 0%.</p>
+        </div>
+      </div>
+
+      <div style="border:1px solid var(--bdr);border-radius:10px;overflow:hidden">
+        <div style="background:var(--sl);border-bottom:1px solid #bfdbfe;padding:10px 16px;display:flex;align-items:center;gap:10px">
+          <span style="font-size:16px">&#x2699;&#xFE0F;</span>
+          <span style="font-size:11px;font-weight:700;color:var(--slt);letter-spacing:.08em;text-transform:uppercase;font-family:'JetBrains Mono',monospace">Backend Development</span>
+        </div>
+        <div style="padding:14px 18px">
+          <p class="eb">Authored JUnit test cases for backend services, strengthening code coverage and validating integration correctness across system components.</p>
+        </div>
+      </div>
+
+      <div style="background:var(--tl);border-left:3px solid var(--teal);border-radius:0 8px 8px 0;padding:14px 18px">
+        <div style="font-size:11px;font-weight:700;color:var(--teal);letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;font-family:'JetBrains Mono',monospace">Manager Feedback</div>
+        <p style="font-size:13.5px;color:var(--td);line-height:1.75;font-style:italic">"Exceptional dedication and efficiency in completing all build verifications and EPs on time and to a high standard. She proactively identifies and resolves issues, significantly reducing FST to nearly 0%. Fact-based decisions, effective communication, and speedy execution have aligned perfectly with our core values. Well done!"</p>
+      </div>
+
+    </div>
+  </div>
+</div></div>
+
+<div class="sec" id="projects"><div class="w">
+  <div class="sh rv"><div class="stag">Projects</div><h2 class="stit">Built with <em>benchmarks,</em> not tutorials.</h2><p class="ssub">Click any project to expand full technical breakdown &mdash; original findings included.</p></div>
+  <div>
+    <div class="pc rv" id="c0"><div class="pch" onclick="tog('c0')"><div class="pci"><div class="pcm"><span class="pcn">01</span><span class="bdg bt">MLOps</span><span class="bdg bf">Production</span></div><h3 class="pctit">Production MLOps Feature Store &mdash; Real-Time Serving &amp; Drift Detection</h3><p class="pcp">0.37ms P99 fraud feature serving in Redis, drift detected up to 19&times; faster than mean/std monitoring, 14-panel Grafana dashboard with automated alerting &mdash; full production MLOps stack.</p></div><div class="pcchev">&#9662;</div></div>
+    <div class="pcb"><div class="bl"><div class="bltag">Key Metrics</div><div class="mr"><div class="mb"><div class="mv t">0.37ms</div><div class="ml">P99 Serving</div></div><div class="mb"><div class="mv f">19&times;</div><div class="ml">Faster Drift</div></div><div class="mb"><div class="mv a">34</div><div class="ml">Features/Txn</div></div><div class="mb"><div class="mv r">19</div><div class="ml">Unit Tests</div></div></div></div>
+    <div class="bl"><div class="bltag">What It Solves</div><p class="bd">You train a fraud model. It works. Six months later it <strong>silently degrades</strong> because transaction patterns shifted. This system prevents that. Dual-store: Redis (HGETALL returns all 34 features in one round-trip at 0.37ms P99) for sub-ms online serving, PostgreSQL with <strong>point-in-time correct</strong> time-travel queries for offline training &mdash; eliminating training-serving skew by construction. Every feature snapshot is stamped with <code>valid_from</code>; training queries return the value the model would have seen at prediction time, not current values.</p></div>
+    <div class="bl"><div class="bltag">Original Findings</div><div class="fils"><div class="fi"><div class="fd ft">&#10003;</div><div><strong>PSI + KL divergence detected gradual drift 19&times; faster</strong> than mean&plusmn;2&sigma; monitoring (1h vs 19h). Seasonal shift: 6&times; faster. Sudden shift: 2&times; faster. KL catches histogram shape changes while the mean is still within 2 standard deviations.</div></div><div class="fi"><div class="fd ff">&#10003;</div><div><strong>P99 0.37ms</strong> across 1,000 reads of 34 features each &mdash; well inside the &lt;10ms gate. End-to-end prediction P99: 5.6ms across 10,000 requests.</div></div><div class="fi"><div class="fd fa">&#10003;</div><div><strong>False positive rate 2.35%</strong> across 1,700 feature checks (target &lt;5%) &mdash; achieved by sampling from the exact baseline histogram, not a Gaussian approximation.</div></div></div></div>
+    <div class="bl"><div class="bltag">Stack</div><div class="stags"><span class="stag2">Python</span><span class="stag2">Redis 7</span><span class="stag2">PostgreSQL 15</span><span class="stag2">XGBoost</span><span class="stag2">FastAPI</span><span class="stag2">Custom PSI+KL</span><span class="stag2">Grafana</span><span class="stag2">Prometheus</span><span class="stag2">Docker</span></div></div>
+    <div class="bl"><a href="https://github.com/LahariKankipati/Production-MLOps-Feature-Store-Real-Time-Serving-Drift-Detection" target="_blank" rel="noopener noreferrer" class="btn" style="font-size:12.5px;padding:7px 15px">&#128279; View on GitHub</a></div>
+    </div></div>
+
+    <div class="pc rv" id="c1"><div class="pch" onclick="tog('c1')"><div class="pci"><div class="pcm"><span class="pcn">02</span><span class="bdg br">RAG</span><span class="bdg bs">GenAI</span></div><h3 class="pctit">AI SaaS Onboarding Copilot</h3><p class="pcp">Behavior-aware RAG system with proactive trigger engine &mdash; ablation study proved CrossEncoder reranking hurt Recall@3 by 20% on domain docs. 97.8% dense-only baseline. Embeddable via a single script tag.</p></div><div class="pcchev">&#9662;</div></div>
+    <div class="pcb"><div class="bl"><div class="bltag">Key Metrics</div><div class="mr"><div class="mb"><div class="mv t">97.8%</div><div class="ml">Recall@3</div></div><div class="mb"><div class="mv f">100%</div><div class="ml">Abstain Acc.</div></div><div class="mb"><div class="mv a">86.4%</div><div class="ml">Faithfulness</div></div><div class="mb"><div class="mv r">27/27</div><div class="ml">Tests</div></div></div></div>
+    <div class="bl"><div class="bltag">What Makes It Different</div><p class="bd">Every commercial competitor (Intercom Fin, Mendable, Mintlify) waits for users to ask. This system <strong>intervenes before they need to ask</strong>. A proactive trigger engine evaluates 10 behavioral rules every 15 seconds &mdash; dwell time, navigation patterns, features clicked &mdash; and surfaces contextual tips before users get stuck. Tracks 4 user lifecycle stages: new, exploring, stuck, activated. Jargon detection auto-upgrades persona. Embeds in any SaaS page via one script tag, zero dependencies.</p></div>
+    <div class="bl"><div class="bltag">Original Findings</div><div class="fils"><div class="fi"><div class="fd fa">!</div><div><strong>CrossEncoder reranker degraded Recall@3 from 97.8% to 77.8% (-20%)</strong> &mdash; ms-marco-MiniLM trained on web search, demotes domain jargon like Supabase RLS. Dense-only outperformed hybrid+reranker. Finding: rerankers must be empirically validated per domain.</div></div><div class="fi"><div class="fd ft">&#10003;</div><div><strong>Persona adaptation:</strong> same question &rarr; 42-word numbered tutorial (new user) vs 19-word direct SQL command (activated). Jargon detection auto-upgrades persona when technical terms are used.</div></div><div class="fi"><div class="fd ff">&#10003;</div><div><strong>50-question handwritten eval suite</strong> across 7 categories (auth, database, storage, realtime, edge functions, getting started, out-of-scope). Faithfulness scored by LLM-as-judge.</div></div></div></div>
+    <div class="bl"><div class="bltag">Stack</div><div class="stags"><span class="stag2">Python</span><span class="stag2">Qdrant</span><span class="stag2">LangChain</span><span class="stag2">FastAPI</span><span class="stag2">Redis</span><span class="stag2">Groq llama-3.1-8b</span><span class="stag2">BM25/RRF</span><span class="stag2">all-MiniLM-L6-v2</span><span class="stag2">Docker</span></div></div>
+    <div class="bl"><a href="https://github.com/LahariKankipati/AI-Saas-Onboarding-Copilot" target="_blank" rel="noopener noreferrer" class="btn" style="font-size:12.5px;padding:7px 15px">&#128279; View on GitHub</a></div>
+    </div></div>
+
+    <div class="pc rv" id="c2"><div class="pch" onclick="tog('c2')"><div class="pci"><div class="pcm"><span class="pcn">03</span><span class="bdg bt">LLM Fine-tuning</span><span class="bdg ba">Healthcare AI</span></div><h3 class="pctit">AI Healthcare Chatbot &mdash; Llama-2 + LoRA + 4-bit Quantization</h3><p class="pcp">Fine-tuned Llama-2 on a 12GB consumer GPU using LoRA (0.9% trainable params) + 4-bit quantization. 87% memory reduction. 100% emergency detection sensitivity. Runs on RTX 3060 &mdash; no cloud GPU required.</p></div><div class="pcchev">&#9662;</div></div>
+    <div class="pcb"><div class="bl"><div class="bltag">Key Metrics</div><div class="mr"><div class="mb"><div class="mv t">100%</div><div class="ml">Emergency Det.</div></div><div class="mb"><div class="mv f">87%</div><div class="ml">Memory Reduction</div></div><div class="mb"><div class="mv a">0.9%</div><div class="ml">Trainable Params</div></div><div class="mb"><div class="mv r">~54s</div><div class="ml">Inference</div></div></div></div>
+    <div class="bl"><div class="bltag">The Innovation</div><p class="bd">Modern medical AI requires costly cloud hardware (80GB+ VRAM). This system runs fully on a <strong>12GB consumer GPU (RTX 3060)</strong>. LoRA with 65M trainable parameters + 4-bit NF4 quantization reduces memory by 87% while preserving accuracy. Trained on a curated medical instruction dataset with safety modules: emergency detection, multi-turn memory, severity scoring, anatomical mapping, multilingual support, and auto-disclaimers. Deployed via PyTorch + Streamlit.</p></div>
+    <div class="bl"><div class="bltag">Results</div><div class="fils"><div class="fi"><div class="fd ft">&#10003;</div><div><strong>100% emergency detection sensitivity</strong> &mdash; every critical case correctly flagged for immediate care.</div></div><div class="fi"><div class="fd ff">&#10003;</div><div><strong>87% GPU memory reduction</strong> via 4-bit quantization + LoRA adapter training (only 0.9% of parameters updated).</div></div><div class="fi"><div class="fd fa">&#10003;</div><div><strong>Consistency score 0.871</strong> on 15-case test dataset across 12 medical categories &mdash; above 0.80 target.</div></div></div></div>
+    <div class="bl"><div class="bltag">Stack</div><div class="stags"><span class="stag2">Python</span><span class="stag2">Llama-2</span><span class="stag2">LoRA</span><span class="stag2">4-bit NF4</span><span class="stag2">PyTorch</span><span class="stag2">LangChain</span><span class="stag2">OpenSearch</span><span class="stag2">Streamlit</span></div></div>
+    </div></div>
+
+    <div class="pc rv" id="c3"><div class="pch" onclick="tog('c3')"><div class="pci"><div class="pcm"><span class="pcn">04</span><span class="bdg br">Multi-Agent</span><span class="bdg bs">Research</span></div><h3 class="pctit">Collaborative Multi-Agent GenAI System</h3><p class="pcp">In-progress research &mdash; Agent A and Agent B independently generate responses, then a separate critique agent decides whether to merge both outputs or select one. Evaluated on novelty, practicality, and quality.</p></div><div class="pcchev">&#9662;</div></div>
+    <div class="pcb">
+    <div class="bl"><div class="bltag" style="color:var(--amb)">In Progress</div><p class="bd">Investigating which multi-agent collaboration architecture produces superior outputs vs a single-agent baseline. The core question: does independent parallel generation with a dedicated merge/select judge outperform iterative critique-refine? Each architecture is systematically implemented and evaluated.</p></div>
+    <div class="bl"><div class="bltag">Architectures Under Study</div><div class="fils"><div class="fi"><div class="fd ft">A</div><div><strong>Generate-Critique-Refine (GCR):</strong> Agent A generates &rarr; a dedicated Critic agent evaluates for accuracy and completeness &rarr; Agent A refines. Convergence-based loop termination.</div></div><div class="fi"><div class="fd ff">B</div><div><strong>Parallel Generate + Merge:</strong> Agent A and Agent B independently generate full responses &rarr; a separate Critique agent decides whether to merge both outputs into a stronger answer or select the better one outright.</div></div><div class="fi"><div class="fd fa">C</div><div><strong>Single Agent Baseline:</strong> Standard single-model output used as the evaluation baseline across all criteria.</div></div></div></div>
+    <div class="bl"><div class="bltag">Evaluation Criteria (3)</div><div class="fils"><div class="fi"><div class="fd ft">1</div><div><strong>Novelty:</strong> does the multi-agent output surface insights or perspectives absent from the single-agent response?</div></div><div class="fi"><div class="fd ff">2</div><div><strong>Practicality:</strong> is the response directly actionable &mdash; concrete steps, not abstract advice?</div></div><div class="fi"><div class="fd fa">3</div><div><strong>Quality:</strong> overall accuracy, coherence, and completeness scored by LLM-as-judge against ground truth.</div></div></div></div>
+    <div class="bl"><div class="bltag">Stack</div><div class="stags"><span class="stag2">Python</span><span class="stag2">Mistral 7B</span><span class="stag2">Multi-agent</span><span class="stag2">LLM-as-judge</span></div></div>
+    <div class="bl"><a href="https://github.com/LahariKankipati/Multiagent" target="_blank" rel="noopener noreferrer" class="btn" style="font-size:12.5px;padding:7px 15px">&#128279; View on GitHub</a></div>
+    </div></div>
+  </div>
+
+
+  <h3 class="rv" style="font-family:'Fraunces',serif;font-weight:700;font-size:20px;letter-spacing:-.02em;margin:40px 0 14px;color:var(--ink)">Additional Projects</h3>
+  <div class="mg">
+    <div class="mini rv">
+      <div class="mn">HACKATHON &middot; ERICSSON INTERNAL</div>
+      <div class="mt">Automated Unit Test Case Generator</div>
+      <p class="md">Built during an internal Ericsson hackathon — a script-based tool that takes a code file as input and automatically generates unit test cases. Eliminated hours of manual test writing per engineer and improved test coverage velocity across the team.</p>
+      <div class="chips"><span class="chip">Python</span><span class="chip">Script Automation</span><span class="chip">Unit Testing</span><span class="chip">Code Analysis</span></div>
+    </div>
+    <div class="mini rv d1">
+      <div class="mn">PROJECT 05</div>
+      <div class="mt">Profit Optimization Model</div>
+      <p class="md">LangGraph multi-agent pipeline with 35+ engineered features per region. Integrates real-time weather, yield, and commodity data to maximize profitability under resource constraints &mdash; deployed at 1819 Innovation Hub, UC. P10/P50/P90 profit percentile outputs with uncertainty estimation.</p>
+      <div class="chips"><span class="chip">LangGraph</span><span class="chip">scikit-learn</span><span class="chip">FastAPI</span><span class="chip">React</span><span class="chip">USDA NASS API</span><span class="chip">NOAA API</span><span class="chip">Neo4j</span></div>
+      <a href="https://github.com/LahariKankipati/Profit-Optimization-Model" target="_blank" rel="noopener noreferrer" class="btn" style="margin-top:10px;font-size:11.5px;padding:6px 13px">&#128279; View on GitHub</a>
+    </div>
+    <div class="mini rv"><div class="mn">PROJECT 06</div><div class="mt">Multimodal Vision-Language Classification (CLIP)</div><p class="md">CLIP RN50 512-dim zero-shot embeddings. Downstream classifiers: 45% &rarr; 89% accuracy. MLP matched specialized CNN performance.</p><div class="chips"><span class="chip">PyTorch</span><span class="chip">CLIP RN50</span><span class="chip">MLP</span></div></div>
+
+    <div class="mini rv d2"><div class="mn">PROJECT 07 &middot; PUBLISHED</div><div class="pub">IJIES &middot; Oct 2023 &middot; Peer-reviewed</div><div class="mt">Heart Disease Prediction Using ML &amp; Hyperparameter Optimization</div><p class="md">Benchmarked 6 classifiers (Random Forest, SVM, KNN, Logistic Regression, Decision Tree, Gradient Boosting) on UCI Cleveland Heart Disease dataset. GridSearchCV + RandomizedSearchCV improved best model accuracy by <strong>8.3%</strong>. RFE reduced features from 13 to 7 with no accuracy loss; cholesterol and max heart rate identified as top predictors. SMOTE applied for class imbalance. Achieved 88.5% accuracy post-optimization.</p><div class="chips"><span class="chip">scikit-learn</span><span class="chip">GridSearchCV</span><span class="chip">RandomizedSearchCV</span><span class="chip">RFE</span><span class="chip">SMOTE</span><span class="chip">UCI Dataset</span></div></div>
+  </div>
+</div></div>
+
+<div class="sec" id="education"><div class="w">
+  <div class="sh rv"><div class="stag">Education</div><h2 class="stit"><em>4.0 GPA</em> academic foundation.</h2></div>
+  <div class="eg rv">
+    <div class="edu ft2"><div class="edd">Master of Engineering in Artificial Intelligence</div><div class="eds">University of Cincinnati, College of Engineering</div><div class="eddt">Aug 2025 &ndash; Present &middot; Cincinnati, OH</div><div class="gpa"><div class="gpan">4.0</div><div class="gpal">&nbsp;GPA</div></div><div class="edf">Machine Learning &middot; Deep Learning &middot; Generative AI &middot; Cloud Computing</div></div>
+    <div class="edu"><div class="edd">B.Tech, Computer Science &amp; Engineering</div><div class="eds">Vellore Institute of Technology, Amaravathi</div><div class="eddt">Jul 2019 &ndash; May 2023 &middot; India</div><div class="gpa"><div class="gpan" style="color:var(--ink2)">3.59</div><div class="gpal">&nbsp;GPA</div></div><div class="edf">Computer Science &middot; Software Engineering &middot; Algorithms</div></div>
+  </div>
+  <h3 class="rv" style="font-family:'Fraunces',serif;font-weight:700;font-size:18px;letter-spacing:-.02em;margin:36px 0 13px;color:var(--ink)">Awards &amp; Recognition</h3>
+  <div class="cg">
+    <div class="cc rv" style="border-color:#fde68a;background:var(--al)"><div class="ci2">&#x1F3C6;</div><div><div class="cn">Gen AI Specialist for Test Automation</div><div class="co">Ericsson R&amp;D &middot; 2025 &middot; Company-wide award</div></div></div>
+    <div class="cc rv d1" style="border-color:#fde68a;background:var(--al)"><div class="ci2">&#x1F3C6;</div><div><div class="cn">Top 5 Finalist &middot; Kautz-Uible Economics Hackathon</div><div class="co">University of Cincinnati &middot; 2025 &middot; Prize money $1,000</div></div></div>
+    <div class="cc rv"><div class="ci2">&#x1F4C4;</div><div><div class="cn">Heart Disease ML Research &mdash; Published</div><div class="co">International Journal of Intelligent Engineering &amp; Systems &middot; Oct 2023</div></div></div>
+    <div class="cc rv d1"><div class="ci2">&#x1F947;</div><div><div class="cn">PNC Hackathon Participant</div><div class="co">AI-powered financial recommendation assistant &middot; 2025</div><a href="https://github.com/LahariKankipati/Chatbot_PNC_Hackathon" target="_blank" rel="noopener noreferrer" style="font-size:11px;color:var(--teal);font-weight:600;text-decoration:none;display:inline-block;margin-top:4px">&#128279; View on GitHub</a></div></div>
+  </div>
+  <h3 class="rv" style="font-family:'Fraunces',serif;font-weight:700;font-size:18px;letter-spacing:-.02em;margin:32px 0 13px;color:var(--ink)">Certifications</h3>
+  <div class="cg">
+    <div class="cc rv"><div class="ci2">&#x1F393;</div><div><div class="cn">Machine Learning Specialization</div><div class="co">Stanford University / Coursera</div></div></div>
+    <div class="cc rv d1"><div class="ci2">&#x1F916;</div><div><div class="cn">Generative AI: Prompt Engineering</div><div class="co">IBM &middot; Sept 2025</div></div></div>
+    <div class="cc rv"><div class="ci2">&#x2601;&#xFE0F;</div><div><div class="cn">DevOps on AWS &amp; Project Management</div><div class="co">Amazon Web Services &middot; Oct 2025</div></div></div>
+    <div class="cc rv d1"><div class="ci2">&#x1F9E0;</div><div><div class="cn">RAG Crash Course</div><div class="co">KodeKloud &middot; 2026</div></div></div>
+    <div class="cc rv"><div class="ci2">&#x1F433;</div><div><div class="cn">Docker Essentials</div><div class="co">IBM &middot; April 2023</div></div></div>
+    <div class="cc rv d1"><div class="ci2">&#x1F4BB;</div><div><div class="cn">JavaScript Algorithms &amp; Data Structures</div><div class="co">FreeCodeCamp &middot; May 2023</div></div></div>
+  </div>
+</div></div>
+
+<div class="sec" id="contact"><div class="w">
+  <div class="ctb rv">
+    <div><h2 class="cth">Open to <em>AI/ML roles.</em><br>Let's talk.</h2><p class="cts">Full-time AI/ML Engineering &middot; Research &middot; Internships<br> Open to remote and relocation</p></div>
+    <div class="ctls">
+      <a href="mailto:kankipatilahari@gmail.com" class="cl hi">Mail</a>
+      <a href="https://linkedin.com/in/laharikankipati" target="_blank" rel="noopener noreferrer" class="cl">LinkedIn</a>
+      <a href="https://github.com/LahariKankipati" target="_blank" rel="noopener noreferrer" class="cl">GitHub</a>
+      <a href="tel:5133487836" class="cl">Call</a>
+    </div>
+  </div>
+</div></div>
+</div>
+
+
+<footer>
+  <div>Lahari Kankipati &middot; AI/ML Engineer &middot; 2026</div>
+  <div class="flinks">
+    <a href="mailto:kankipatilahari@gmail.com" class="flink">&#9993; Email</a>
+    <a href="https://linkedin.com/in/laharikankipati" target="_blank" rel="noopener noreferrer" class="flink">&#128279; LinkedIn</a>
+    <a href="https://github.com/LahariKankipati" target="_blank" rel="noopener noreferrer" class="flink">&#128279; GitHub</a>
+    <a href="resume.html" target="_blank" rel="noopener noreferrer" class="flink">&#8595; Resume</a>
+  </div>
+</footer>
+
+<script>
+// SCROLL REVEAL
+var sro = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); sro.unobserve(e.target); } });
+}, { threshold: 0.07 });
+document.querySelectorAll('.rv').forEach(function(el){ sro.observe(el); });
+
+// ACCORDION
+function tog(id) {
+  var c = document.getElementById(id);
+  var was = c.classList.contains('op');
+  document.querySelectorAll('.pc').forEach(function(p){ p.classList.remove('op'); });
+  if (!was) c.classList.add('op');
+}
+
+</script>
+</body>
+</html>
